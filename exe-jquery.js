@@ -14,8 +14,9 @@ $('#text-cor').keyup(function(){
 });
 
 $("#add-cor").click(function(){
+    
     var cor = $('#text-cor').val();
     var opt = '<option>'+ cor +'</option>';
 
-    $('#cor').append(opt);
+    $('#cor').append(opt);// função append adiciona um html dentro do outro 
 });
