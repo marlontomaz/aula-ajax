@@ -1,39 +1,39 @@
 <html>
 	<head>
-
 		<title>Aula Js</title>
 		<script type="text/javascript" src="string.js">
-
         </script>
-        <style>
-            #resultado
         
-        </style>
+        <style>
+            #resultado {
+                border: 1px solid red;
+                margin-top: 20px;
+                min-height: 50px;
 
+            }
+        </style>
 	</head>
 
 	<body>
-
 		<h1>String Js</h1>
 
 		<fieldset>
-            <legend>Primeiro letra maiuscula</legend>
-			<input type="text" id="texto"/>
+            <legend>Primeira letra maiuscula</legend>
+			<input type="text" id="texto" />		
+		
+            <button onClick="letra()">Maiuscula</button>
+            <button onClick="reverso()">Reverso</button>
 
-			<button onClick="letra()">Maiuscula</button> 
-            <button onClick="reverso()">Reverso</button> 
+        </fieldset>
+        
+        <div id="resultado">
 
-		</fieldset>	
+        </div>
 
 		
 
-		<div id="resultado">
-
-
-
-		</div>
-
-
+		
+	
 	</body>
 
 </html>

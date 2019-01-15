@@ -15,3 +15,4 @@ function ligar()
 {
     setInterval(letreiro, 300);
 }
+

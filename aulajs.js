@@ -1,4 +1,4 @@
-//js 
+//js
 
 function grande()
 {
@@ -7,9 +7,9 @@ function grande()
 
 	var texto = input.value;
 
-	resultado. innerHTML = texto.toUpperCase();
-}
+	resultado.innerHTML = texto.toUpperCase();
 
+}
 
 function cidade()
 {
@@ -17,6 +17,7 @@ function cidade()
 	var lista = document.getElementById("lista");
 
 	var novo = '<li>'+ cidade.value +'</li>';
+	
 
-	lista. innerHTML = 	lista. innerHTML + novo;
+	lista.innerHTML += novo;
 }
