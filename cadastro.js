@@ -5,16 +5,23 @@ $(document).ready(function(){
     $("#cadastrar").click(function(){
                
         var cidade = $("#cidade").val();
-        var conteudo = "<li>"+cidade+"</li>";
+        var cep = $("#CEP").val();
+        
+        var conteudo = "<li>"+cidade
+        + '-CEP:' + cep
+        + ' <span class="del"> [x]</span></li>';
 
         $("#lista-cidades").append(conteudo);
 
 
     }); //fim fo click botao 
 
-    $(".del").click(function(){
-        $(this).parent().remove();                 //"this" aquele clicado no momento 
-    }); // fim click dell
+    $("#lista-cidades").on("click", ".del", function(){
+        $(this).parent().fadeOut(800, function(){
+            $(this).remove();
+
+        });    //"this" aquele clicado no momento 
+    });
     
 }); //fim do ready
 
